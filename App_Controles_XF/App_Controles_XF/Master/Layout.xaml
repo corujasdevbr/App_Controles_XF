@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:pages="clr-namespace:App_Controles_XF"
+             x:Class="App_Controles_XF.Master.Layout">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <StackLayout Margin="40">
+                    <Image
+                        Source="https://www.corujasdev.com.br/wp-content/uploads/2018/09/CorujasDev.png"
+                        Aspect="AspectFit" 
+                        IsOpaque="True"
+                        x:Name="imgOne"
+                    />  
+                </StackLayout>
+                <ScrollView>
+                    <StackLayout>
+                        <Button Text="Activity Indicator" ClassId="activityindicator" Clicked="goPageControl" />
+                        <Button Text="Progress Bar" ClassId="progressbar" Clicked="goPageControl" />
+                        <Button Text="Box View" ClassId="boxview" Clicked="goPageControl" />
+                        <Button Text="Label" ClassId="label" Clicked="goPageControl" />
+                        <Button Text="Button" ClassId="button" Clicked="goPageControl" />
+                        <Button Text="Entry/Editor" ClassId="entryEditor" Clicked="goPageControl" />
+                        <Button Text="DatePicker" ClassId="datePicker" Clicked="goPageControl" />
+                        <Button Text="TimePicker" ClassId="timePicker" Clicked="goPageControl" />
+                        <Button Text="Picker" ClassId="picker" Clicked="goPageControl" />
+                        <Button Text="SearchBar" ClassId="searchBar" Clicked="goPageControl" />
+                        <Button Text="Slider/Stepeer" ClassId="sliderStepeer" Clicked="goPageControl" />
+                        <Button Text="Switch" ClassId="switch" Clicked="goPageControl" />
+                        <Button Text="Imagem" ClassId="image" Clicked="goPageControl" />
+                        <Button Text="ListView" ClassId="listView" Clicked="goPageControl" />
+                        <Button Text="TableView" ClassId="tableView" Clicked="goPageControl" />
+                        <Button Text="WebView" ClassId="webView" Clicked="goPageControl" />
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <pages:MainPage />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
